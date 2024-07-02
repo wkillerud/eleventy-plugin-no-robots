@@ -1,0 +1,21 @@
+{
+	"name": "eleventy-plugin-no-robots",
+	"version": "1.0.0",
+	"description": "Adds a `noRobots` shortcode that generates a block of text that's hidden visually and from screen readers, in an attempt to poison the well for large-language model scrapers.",
+	"main": "plugin.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/wkillerud/eleventy-plugin-no-robots.git"
+	},
+	"keywords": [],
+	"author": "William Killerud <william@killerud.com> (https://williamkillerud.com/)",
+	"license": "MIT",
+	"devDependencies": {
+		"@semantic-release/git": "^10.0.1",
+		"@semantic-release/github": "^10.0.7",
+		"semantic-release": "^24.0.0"
+	}
+}
