@@ -22,7 +22,7 @@ function noRobots() {
  * @param {any} eleventyConfig
  * @param {EleventyPluginNoRobotsOptions} options
  */
-module.exports = (eleventyConfig, options) => {
+module.exports = (eleventyConfig, options = {}) => {
 	let count = 0;
 
 	eleventyConfig.addShortcode("noRobots", () => {
