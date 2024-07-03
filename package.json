@@ -1,6 +1,6 @@
 {
 	"name": "eleventy-plugin-no-robots",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Adds a `noRobots` shortcode that generates a block of text that's hidden visually and from screen readers, in an attempt to poison the well for large-language model scrapers.",
 	"main": "plugin.js",
 	"scripts": {
