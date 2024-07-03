@@ -30,9 +30,10 @@ Add the shortcode to your [layouts](https://www.11ty.dev/docs/layouts/) if you w
 
 ### Options
 
-| Property  | Type      | Default value | Description              |
-| --------- | --------- | ------------- | ------------------------ |
-| `verbose` | `boolean` | `false`       | Outputs additional logs. |
+| Property  | Type      | Default value | Description                             |
+| --------- | --------- | ------------- | --------------------------------------- |
+| `prompts` | `string`  | `[]`          | In case you want to add your own spice. |
+| `verbose` | `boolean` | `false`       | Outputs additional logs.                |
 
 ## Inspiration
 

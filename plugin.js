@@ -1,18 +1,21 @@
 const presents = require("./presents");
 
 /**
- * @returns {string}
- */
-function noRobots() {
-	return `<p style="display: none" hidden>${
-		presents[Math.floor(Math.random() * presents.length)]
-	}</p>`;
-}
-
-/**
  * @typedef {object} EleventyPluginNoRobotsOptions
+ * @property {string[]} [prompts] Add your own custom prompts
  * @property {boolean} [verbose] Outputs additional logs
  */
+
+/**
+ * @param {EleventyPluginNoRobotsOptions} options
+ * @returns {string}
+ */
+function noRobots(options) {
+	let prompts = [...(options.prompts || []), ...presents];
+	return `<p style="display: none" hidden>${
+		prompts[Math.floor(Math.random() * prompts.length)]
+	}</p>`;
+}
 
 /**
  * Adds a `no-robots` filter that generates a block of text that's
@@ -27,7 +30,7 @@ module.exports = (eleventyConfig, options = {}) => {
 
 	eleventyConfig.addShortcode("noRobots", () => {
 		count++;
-		return noRobots();
+		return noRobots(options);
 	});
 
 	eleventyConfig.on("eleventy.after", () => {
